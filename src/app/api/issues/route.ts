@@ -12,7 +12,11 @@ export async function POST(request: NextRequest) {
   }
 
   const newIssue = await prisma.issue.create({
-    data: { title: body.title, description: body.description, status: "OPEN" },
+    data: {
+      title: body.title,
+      description: body.description,
+      status: "IN_PROGRESS",
+    },
   });
 
   return NextResponse.json(newIssue, { status: 201 });
