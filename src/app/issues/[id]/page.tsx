@@ -1,5 +1,5 @@
 import { notFound } from "next/navigation";
-import prisma from "../../../../prisma/client";
+import prisma from "@/app/db";
 import { Card, Flex, Heading, Text } from "@radix-ui/themes";
 import StatusBadge from "@/app/components/StatusBadge";
 import Markdown from "react-markdown";

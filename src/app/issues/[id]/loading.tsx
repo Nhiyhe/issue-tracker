@@ -1,10 +1,7 @@
 import { Flex, Card, Box } from "@radix-ui/themes";
-import Skeleton from "react-loading-skeleton";
-import "react-loading-skeleton/dist/skeleton.css";
-import delay from "delay";
+import { Skeleton } from "@/app/components";
 
 const IssueDetailLoadingPage = () => {
-  delay(5000);
   return (
     <Box className="max-w-lg">
       <Skeleton />
@@ -16,7 +13,6 @@ const IssueDetailLoadingPage = () => {
         <Skeleton count={3} />
       </Card>
     </Box>
-    // <div>Loading...</div>
   );
 };
 
