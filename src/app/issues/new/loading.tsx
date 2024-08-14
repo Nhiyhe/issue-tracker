@@ -3,7 +3,7 @@ import { Box } from "@radix-ui/themes";
 const NewIssueLoadingPage = () => {
   return (
     <Box>
-      <Skeleton />
+      <Skeleton width="10rem" />
       <Skeleton height="20rem" />
     </Box>
   );
